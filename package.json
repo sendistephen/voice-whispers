@@ -1,21 +1,33 @@
 {
-  "name": "voice-whispers",
-  "version": "1.0.0",
-  "description": "VoiceWhispers:Share your voice, connect through sound. Join the audio-based social network for sharing short-form podcasts under 5 minutes. Discover a world of concise, captivating audio experiences and engage with a community of voices on VoiceWhispers",
-  "main": "index.ts",
-  "repository": "https://github.com/sendistephen/voice-whispers.git",
-  "author": "sendistephen <sendi.steve2@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.1.0",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.2",
-    "multer": "^1.4.5-lts.1",
-    "nodemon": "^2.0.22",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.4"
-  }
+	"name": "voice-whispers",
+	"version": "1.0.0",
+	"description": "VoiceWhispers:Share your voice, connect through sound. Join the audio-based social network for sharing short-form podcasts under 5 minutes. Discover a world of concise, captivating audio experiences and engage with a community of voices on VoiceWhispers",
+	"main": "src/config/server.ts",
+	"repository": "https://github.com/sendistephen/voice-whispers.git",
+	"author": "sendistephen <sendi.steve2@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "ts-node-dev --respawn --transpile-only src/config/server.ts",
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.1.0",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.0",
+		"mongoose": "^7.2.2",
+		"multer": "^1.4.5-lts.1",
+		"nodemon": "^2.0.22",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.0.4"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.13",
+		"@types/express": "^4.17.17",
+		"eslint": "^8.41.0",
+		"prettier": "^2.8.8"
+	}
 }
